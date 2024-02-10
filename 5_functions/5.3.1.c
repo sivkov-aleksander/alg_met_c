@@ -26,7 +26,13 @@ int iscube(int x) {
 }
 
 int isprime(int x) {
-    return 0;
+    int d = 2;
+    while (d < x / 2 + 1) {
+        if (x%d == 0)
+            return 0;
+        d += 1;
+    }
+    return 1;
 }
 
 int isthreepow(int x) {
